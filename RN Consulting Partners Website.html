@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RN Consulting Partners | Pharma Manufacturing Consulting, Singapore</title>
+<meta name="description" content="RN Consulting Partners helps pharma manufacturing sites thrive under cost pressure. Start-up and stabilisation, leadership mentoring, productivity and product cost.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Libre+Franklin:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F7FA; --surface:#FFFFFF; --ink:#101B2D; --muted:#4A5568; --navy:#14233B; --navy-ink:#F5F7FA;
+  --gold:#B8923A; --line:#D9DEE6;
+  --serif:'Newsreader',Georgia,'Times New Roman',serif;
+  --sans:'Libre Franklin',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0C1524;--surface:#121E31;--ink:#EEF1F6;--muted:#A9B4C4;--navy:#0A1220;--gold:#D4AE5A;--line:#243249}
+}
+:root[data-theme="dark"]{--bg:#0C1524;--surface:#121E31;--ink:#EEF1F6;--muted:#A9B4C4;--navy:#0A1220;--gold:#D4AE5A;--line:#243249}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--sans)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.5rem}
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:1.1rem;padding-bottom:1.1rem;gap:1rem;flex-wrap:wrap}
+.mark{display:flex;align-items:center;gap:.75rem;text-decoration:none}
+.mono{width:2.6rem;height:2.6rem;background:var(--navy);color:var(--gold);display:grid;place-items:center;font:600 1.05rem/1 var(--serif);letter-spacing:.04em;border-radius:3px}
+.mark b{font:600 1.05rem/1.2 var(--serif)}
+.mark small{display:block;color:var(--muted);font-size:.8rem}
+nav a{margin-left:1.4rem;text-decoration:none;font-weight:500;font-size:.95rem;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{padding:5.5rem 0 4.5rem}
+.hero h1{font:400 clamp(2.6rem,7vw,5rem)/1.04 var(--serif);letter-spacing:-.02em;margin:0 0 1.5rem;max-width:14ch}
+.hero p.lead{font-size:1.2rem;max-width:40rem;color:var(--muted);margin:0 0 2rem}
+.btn{display:inline-block;background:var(--navy);color:var(--navy-ink);padding:.85rem 1.5rem;border-radius:3px;text-decoration:none;font-weight:600;border:1px solid var(--navy)}
+.btn:hover{border-color:var(--gold)}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--ink);margin-left:.6rem}
+.proof{background:var(--navy);color:var(--navy-ink)}
+.proof .wrap{padding-top:3.5rem;padding-bottom:3.5rem;display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:center}
+.proof .big{font:400 clamp(2rem,4.6vw,3.2rem)/1.12 var(--serif)}
+.proof .big span{color:var(--gold)}
+.proof ul{margin:0;padding:0;list-style:none;display:grid;gap:.9rem}
+.proof li{padding-left:1rem;border-left:2px solid var(--gold);font-size:1rem}
+section.block{padding:4.5rem 0;border-bottom:1px solid var(--line)}
+h2{font:400 clamp(1.8rem,3.6vw,2.5rem)/1.15 var(--serif);margin:0 0 1rem;letter-spacing:-.01em}
+.intro{color:var(--muted);max-width:40rem;margin:0 0 2.5rem}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.pillar{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--gold);padding:1.6rem}
+.pillar h3{font:600 1.3rem/1.25 var(--serif);margin:0 0 .6rem}
+.pillar p{margin:0;color:var(--muted);font-size:1rem}
+.about{display:grid;grid-template-columns:1fr 1.4fr;gap:3rem}
+.about p{margin:0 0 1rem;max-width:38rem}
+.facts{display:grid;gap:1rem;align-content:start}
+.facts div{border-left:2px solid var(--gold);padding-left:1rem}
+.facts b{display:block;font:600 1.5rem/1.2 var(--serif)}
+.facts span{color:var(--muted);font-size:.95rem}
+.contact{padding:4.5rem 0}
+.contact a.mail{font:400 clamp(1.4rem,3.6vw,2.2rem)/1.2 var(--serif);text-decoration-color:var(--gold);text-underline-offset:.3em}
+footer{border-top:1px solid var(--line);padding:1.8rem 0 2.2rem;color:var(--muted);font-size:.9rem}
+@media (max-width:760px){
+  .pillars,.about,.proof .wrap{grid-template-columns:1fr}
+  .hero{padding:3.5rem 0 3rem} nav a{margin:0 1rem 0 0}
+  .btn.alt{margin:.6rem 0 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="RN Consulting Partners home">
+      <span class="mono" aria-hidden="true">RN</span>
+      <span><b>RN Consulting Partners</b><small>Enabling Growth</small></span>
+    </a>
+    <nav aria-label="Main"><a href="#services">Services</a><a href="#results">Results</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <h1>Thrive under cost pressure.</h1>
+    <p class="lead">RN Consulting Partners helps pharmaceutical manufacturing sites start up, stabilise and lower product cost, with senior leadership experience from strategy through to the shopfloor.</p>
+    <a class="btn" href="mailto:rajnish@rnarulaconsulting.com?subject=Enquiry%20-%20RN%20Consulting%20Partners">Start a conversation</a>
+    <a class="btn alt" href="#services">See how we help</a>
+  </div>
+
+  <div class="proof" id="results">
+    <div class="wrap">
+      <div class="big">Operating costs down ~80% on a key product, while <span>manufacturing capacity tripled.</span></div>
+      <ul>
+        <li>More than US$15M in recurring annual savings</li>
+        <li>10–30% gains in productivity, lead time and on-time-in-full delivery</li>
+        <li>Site recognised with Pfizer Global Supply Performance Awards in 2024 and 2025</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="block" id="services">
+    <div class="wrap">
+      <h2>How we help</h2>
+      <p class="intro">Three focused areas, delivered by a senior practitioner who has run the operations being advised on.</p>
+      <div class="pillars">
+        <article class="pillar"><h3>Start-up and stabilisation</h3><p>Bringing new or struggling sites to stable, reliable performance, from greenfield and brownfield start-ups to API and biologics operations.</p></article>
+        <article class="pillar"><h3>Leadership team mentoring</h3><p>Coaching site leaders and their teams to build ownership, consistency and a shared way of working, backed by an ICF coaching credential.</p></article>
+        <article class="pillar"><h3>Productivity and product cost</h3><p>Practical cost transformation using Lean Six Sigma and operational excellence, protecting quality and supply while the cost base falls.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="wrap about">
+      <div class="facts">
+        <div><b>~31 years</b><span>in pharmaceutical manufacturing leadership</span></div>
+        <div><b>150+ people</b><span>led, with a US$75M operating budget</span></div>
+        <div><b>Pfizer Singapore</b><span>most recently Business Excellence Director</span></div>
+      </div>
+      <div>
+        <h2>About Rajnish Narula</h2>
+        <p>Rajnish Narula is Founder and Managing Director of RN Consulting Partners. His career spans production, supply chain, automation and operational excellence, including nearly three decades at Pfizer Singapore.</p>
+        <p>He believes in strategy-to-shopfloor leadership: clear direction from the top, and changes that hold up in daily operations. He is a Lean Six Sigma practitioner and coach, a speaker on operational excellence and digital manufacturing, and a member of the NTU Industry Advisory Board.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Let's talk</h2>
+      <p class="intro">Tell us about your site and the cost or performance challenge you are working on.</p>
+      <a class="mail" href="mailto:rajnish@rnarulaconsulting.com">rajnish@rnarulaconsulting.com</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">RN Consulting Partners, a division of Mars Tech Ventures Pte. Ltd., Singapore.</div>
+</footer>
+</body>
+</html>
